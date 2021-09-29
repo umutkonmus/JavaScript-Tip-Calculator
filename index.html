@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+    <title>JavaScript Tip Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <form id="hesap" name="hesap">
+            <p>
+                Toplam Tutarı Girin : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="toplamTutarInput" type="text" pattern="[0-9]+" onkeyup="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+            </p>
+            <p>
+                Bahşiş Miktarı Girin(%) : &nbsp;&nbsp;&nbsp;&nbsp;<input name="bahsisMiktariInput" type="text" onkeyup="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+            </p>
+            <p>
+                Kişi Sayısı : &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input name="kisiSayisiInput" type="text" onkeyup="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+            </p>
+        </form>
+        <p>Verilecek Bahşiş : <span id="verilecekBahsis"></span></p>
+        <p>Kişi Başı Verilecek Ödenecek Tutar (Bahşiş Dahil) : <span id="kisiSayisi"></span></p>
+    </div>
+</body>
+</html>
